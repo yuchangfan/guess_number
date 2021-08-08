@@ -1,7 +1,13 @@
 # 猜數字遊戲練習
 
 import random
-r = random.randint(1, 100)
+print('猜數字遊戲')
+lower_limit = input('請輸入下限： ')
+lower_limit = int(lower_limit)
+upper_limit = input('請輸入上限：')
+upper_limit = int(upper_limit)
+
+r = random.randint(lower_limit, upper_limit)
 count = 0
 while True:
 	count = count + 1 # count += 1
